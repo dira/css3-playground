@@ -100,3 +100,25 @@ p
       &.selected, &:hover
         @include linear-gradient(color-stops(#000, #000 50%, #777))
         color: #fff
+
+#cards
+  ol
+    +horizontal-list
+    display: inline-block
+    padding: 50px
+    $bgrd = #E3E3E0
+    background-color: $bgrd
+    +opacity(0.9)
+    li
+      width: 200px
+      height: 270px
+      +border-radius(10px)
+      @include box-shadow(rgba(0,0,0,.1), 1px, 1px, 2px)
+      margin-right: 25px
+      background-color: white
+      +opacity(0.5)
+      &:last-of-type
+        margin-right: 0
+      &:hover
+        +opacity(1)
+        background-color: #fff
