@@ -41,21 +41,27 @@ footer p:first-of-type {
 }
 
 /* line 27, ../../../public/stylesheets/sass/default.sass */
+section {
+  margin: 200px 0;
+  height: 400px;
+}
+
+/* line 31, ../../../public/stylesheets/sass/default.sass */
+p {
+  margin: 1em 0;
+}
+
+/* line 34, ../../../public/stylesheets/sass/default.sass */
 h1 {
   color: #555555;
   margin: 30px 0 40px;
   font-size: 2em;
 }
-/* line 31, ../../../public/stylesheets/sass/default.sass */
+/* line 38, ../../../public/stylesheets/sass/default.sass */
 section h1 {
   color: #777777;
   margin: 20px 0;
   font-size: 1.5em;
-}
-
-/* line 36, ../../../public/stylesheets/sass/default.sass */
-p {
-  margin: 1em 0;
 }
 
 @charset "UTF-8";
@@ -68,11 +74,11 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border: none;
 }
 
-/* line 42, ../../../public/stylesheets/sass/default.sass */
+/* line 47, ../../../public/stylesheets/sass/default.sass */
 #buttons div a, #buttons div input {
   margin: 5px 10px;
 }
-/* line 44, ../../../public/stylesheets/sass/default.sass */
+/* line 49, ../../../public/stylesheets/sass/default.sass */
 #buttons .button {
   display: inline-block;
   padding: 0.5em 2em 0.55em;
@@ -101,7 +107,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   position: relative;
   top: 1px;
 }
-/* line 46, ../../../public/stylesheets/sass/default.sass */
+/* line 51, ../../../public/stylesheets/sass/default.sass */
 #buttons .rounded {
   -moz-border-radius: 2em;
   -webkit-border-radius: 2em;
@@ -110,7 +116,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   -khtml-border-radius: 2em;
   border-radius: 2em;
 }
-/* line 48, ../../../public/stylesheets/sass/default.sass */
+/* line 53, ../../../public/stylesheets/sass/default.sass */
 #buttons .orange {
   border: solid 1px #f6860e;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f9ad5d), color-stop(100%, #f78d1d));
@@ -131,7 +137,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-image: linear-gradient(top, #f78d1d 0%, #f9a64e 100%);
   color: #fcdcbb;
 }
-/* line 50, ../../../public/stylesheets/sass/default.sass */
+/* line 55, ../../../public/stylesheets/sass/default.sass */
 #buttons .red {
   border: solid 1px #9c1115;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #e51a1f), color-stop(100%, #aa1317));
@@ -152,7 +158,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-image: linear-gradient(top, #aa1317 0%, #d8181d 100%);
   color: #e5b8b9;
 }
-/* line 52, ../../../public/stylesheets/sass/default.sass */
+/* line 57, ../../../public/stylesheets/sass/default.sass */
 #buttons .blue {
   border: solid 1px #006d96;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #00a8e7), color-stop(100%, #0078a5));
@@ -173,7 +179,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-image: linear-gradient(top, #0078a5 0%, #009dd8 100%);
   color: #b2d6e4;
 }
-/* line 54, ../../../public/stylesheets/sass/default.sass */
+/* line 59, ../../../public/stylesheets/sass/default.sass */
 #buttons .green {
   border: solid 1px #456f0c;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #73b915), color-stop(100%, #4e7d0e));
@@ -194,7 +200,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-image: linear-gradient(top, #4e7d0e 0%, #6bab13 100%);
   color: #c9d8b6;
 }
-/* line 56, ../../../public/stylesheets/sass/default.sass */
+/* line 61, ../../../public/stylesheets/sass/default.sass */
 #buttons .pink {
   border: solid 1px #f063a3;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f7adcf), color-stop(100%, #f171ab));
@@ -215,7 +221,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-image: linear-gradient(top, #f171ab 0%, #f69fc6 100%);
   color: #fad4e5;
 }
-/* line 58, ../../../public/stylesheets/sass/default.sass */
+/* line 63, ../../../public/stylesheets/sass/default.sass */
 #buttons .violet {
   border: solid 1px #9030c0;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #b468d9), color-stop(100%, #9933cc));
@@ -236,7 +242,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-image: linear-gradient(top, #9933cc 0%, #ad5cd6 100%);
   color: #e0c1ef;
 }
-/* line 60, ../../../public/stylesheets/sass/default.sass */
+/* line 65, ../../../public/stylesheets/sass/default.sass */
 #buttons .brown {
   border: solid 1px #8a2e00;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #db4900), color-stop(100%, #993300));
@@ -257,7 +263,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-image: linear-gradient(top, #993300 0%, #cc4400 100%);
   color: #e0c1b2;
 }
-/* line 62, ../../../public/stylesheets/sass/default.sass */
+/* line 67, ../../../public/stylesheets/sass/default.sass */
 #buttons .dark_green {
   border: solid 1px #2b5700;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #54a800), color-stop(100%, #336600));
@@ -278,7 +284,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-image: linear-gradient(top, #336600 0%, #4d9900 100%);
   color: #c1d1b2;
 }
-/* line 64, ../../../public/stylesheets/sass/default.sass */
+/* line 69, ../../../public/stylesheets/sass/default.sass */
 #buttons .olive {
   border: solid 1px #8e8e2f;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #c3c34b), color-stop(100%, #999933));
@@ -299,7 +305,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-image: linear-gradient(top, #999933 0%, #bfbf40 100%);
   color: #e0e0c1;
 }
-/* line 66, ../../../public/stylesheets/sass/default.sass */
+/* line 71, ../../../public/stylesheets/sass/default.sass */
 #buttons .dark_blue {
   border: solid 1px #1f1f7c;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #2f2fbd), color-stop(100%, #222288));
@@ -320,18 +326,18 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-image: linear-gradient(top, #222288 0%, #2c2cb1 100%);
   color: #bcbcdb;
 }
-/* line 69, ../../../public/stylesheets/sass/default.sass */
+/* line 74, ../../../public/stylesheets/sass/default.sass */
 #buttons .medium {
   font-size: 12px;
   padding: 0.35em 1.5em 0.4em;
 }
-/* line 72, ../../../public/stylesheets/sass/default.sass */
+/* line 77, ../../../public/stylesheets/sass/default.sass */
 #buttons .small {
   font-size: 10px;
   padding: 0.2em 1em 0.275em;
 }
 
-/* line 77, ../../../public/stylesheets/sass/default.sass */
+/* line 82, ../../../public/stylesheets/sass/default.sass */
 #classy_menu ol {
   margin: 0;
   padding: 0;
@@ -362,7 +368,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 #classy_menu ol li:last-child, #classy_menu ol li.last {
   padding-right: 0;
 }
-/* line 82, ../../../public/stylesheets/sass/default.sass */
+/* line 87, ../../../public/stylesheets/sass/default.sass */
 #classy_menu ol li {
   width: 150px;
   height: 100px;
@@ -379,7 +385,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   letter-spacing: 0.5px;
   color: #999999;
 }
-/* line 94, ../../../public/stylesheets/sass/default.sass */
+/* line 99, ../../../public/stylesheets/sass/default.sass */
 #classy_menu ol li:first-of-type {
   -moz-border-radius-bottomleft: 7px;
   -webkit-border-bottom-left-radius: 7px;
@@ -389,7 +395,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border-bottom-left-radius: 7px;
   padding-left: 15px;
 }
-/* line 97, ../../../public/stylesheets/sass/default.sass */
+/* line 102, ../../../public/stylesheets/sass/default.sass */
 #classy_menu ol li:last-of-type {
   -moz-border-radius-bottomright: 7px;
   -webkit-border-bottom-right-radius: 7px;
@@ -399,7 +405,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border-bottom-right-radius: 7px;
   border-right: 0;
 }
-/* line 100, ../../../public/stylesheets/sass/default.sass */
+/* line 105, ../../../public/stylesheets/sass/default.sass */
 #classy_menu ol li.selected, #classy_menu ol li:hover {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #000000), color-stop(50%, #000000), color-stop(100%, #777777));
   background-image: -moz-linear-gradient(top, #000000 0%, #000000 50%, #777777 100%);
@@ -407,7 +413,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   color: white;
 }
 
-/* line 105, ../../../public/stylesheets/sass/default.sass */
+/* line 110, ../../../public/stylesheets/sass/default.sass */
 #cards ol {
   margin: 0;
   padding: 0;
@@ -441,7 +447,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 #cards ol li:last-child, #cards ol li.last {
   padding-right: 0;
 }
-/* line 112, ../../../public/stylesheets/sass/default.sass */
+/* line 117, ../../../public/stylesheets/sass/default.sass */
 #cards ol li {
   width: 200px;
   height: 270px;
@@ -461,14 +467,81 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
 }
-/* line 120, ../../../public/stylesheets/sass/default.sass */
+/* line 125, ../../../public/stylesheets/sass/default.sass */
 #cards ol li:last-of-type {
   margin-right: 0;
 }
-/* line 122, ../../../public/stylesheets/sass/default.sass */
+/* line 127, ../../../public/stylesheets/sass/default.sass */
 #cards ol li:hover {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   background-color: white;
+}
+
+/* line 131, ../../../public/stylesheets/sass/default.sass */
+#popup {
+  background-color: #777777;
+  padding: 30px;
+}
+/* line 134, ../../../public/stylesheets/sass/default.sass */
+#popup div {
+  display: inline-block;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  border-radius: 15px;
+}
+/* line 137, ../../../public/stylesheets/sass/default.sass */
+#popup .wrapper {
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px 0;
+  -o-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px 0;
+}
+/* line 139, ../../../public/stylesheets/sass/default.sass */
+#popup .wrapper div {
+  width: 600px;
+  -moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.1) inset;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #dddddd), color-stop(45px, #dddddd), color-stop(46px, #333333), color-stop(46px, #ffffff), color-stop(100%, #ffffff));
+  background-image: -moz-linear-gradient(top, #dddddd 0%, #dddddd 45px, #333333 46px, #ffffff 46px, #ffffff 100%);
+  background-image: linear-gradient(top, #dddddd 0%, #dddddd 45px, #333333 46px, #ffffff 46px, #ffffff 100%);
+}
+/* line 145, ../../../public/stylesheets/sass/default.sass */
+#popup .wrapper div h1 {
+  -moz-border-radius-topleft: 15px;
+  -webkit-border-top-left-radius: 15px;
+  -o-border-top-left-radius: 15px;
+  -ms-border-top-left-radius: 15px;
+  -khtml-border-top-left-radius: 15px;
+  border-top-left-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -o-border-top-right-radius: 15px;
+  -ms-border-top-right-radius: 15px;
+  -khtml-border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
+  padding: 15px;
+  color: #666699;
+}
+/* line 150, ../../../public/stylesheets/sass/default.sass */
+#popup .wrapper div p {
+  margin: 0;
+  padding: 15px;
+  height: 200px;
+  -moz-border-radius-bottomleft: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -o-border-bottom-left-radius: 15px;
+  -ms-border-bottom-left-radius: 15px;
+  -khtml-border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -o-border-bottom-right-radius: 15px;
+  -ms-border-bottom-right-radius: 15px;
+  -khtml-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
