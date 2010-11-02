@@ -1,10 +1,10 @@
-@import "compass/reset"
+@import "compass"
 @include reset-html5
 
 // generic
 body
-  width: 650px
-  padding: 0
+  width: 940px
+  padding: 0 10px
   margin: 0 auto
 
 body, input
@@ -72,3 +72,31 @@ p
   .small
     font-size: 10px
     padding: 0.2em 1em 0.275em
+
+#classy_menu
+  ol
+    +horizontal-list
+    display: inline-block
+    padding: 50px
+    background-color: black
+    li
+      width: 150px
+      height: 100px
+      line-height: 170px
+      padding: 0 10px
+      background-color: black
+      @include linear-gradient(color-stops(#000, #000 50%, #555))
+      border-right: 1px solid #222
+      +opacity(0.5)
+      letter-spacing: 0.5px
+      color: #999
+      $radius = 7px
+      &:first-of-type
+        @include border-bottom-left-radius($radius)
+        padding-left: 15px
+      &:last-of-type
+        @include border-bottom-right-radius($radius)
+        border-right: 0
+      &.selected, &:hover
+        @include linear-gradient(color-stops(#000, #000 50%, #777))
+        color: #fff
