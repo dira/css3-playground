@@ -152,3 +152,44 @@ h1
         padding: 15px
         height: 250px
         +border-bottom-radius(15px)
+
+#fancy_footer
+  $color = #E3DCD1
+  background-color: darken($color, 3%)
+  padding: 50px 30px
+  .content, footer, section
+    margin: 0 auto
+  .content
+    width: 600px
+    min-height: 100px
+    padding: 30px 40px 0
+    background-color: white
+    border: 1px solid #777
+    border-top: 0
+  footer
+    width: 520px
+    margin-top: 60px
+    position: relative
+    top: 10px
+    border: 1px solid #aaa
+    text-align: left
+    padding: 30px
+    background-color: $color
+    +radial-gradient(color-stops(lighten($color, 10%), $color), top center)
+    section
+      width: 496px
+      height: 80px
+      position: relative
+      top: 33px
+      left: -29px
+      padding: 20px 50px
+      min-height: 0
+      margin-top: 70px
+      margin-left: -10px
+      +border-radius(10px)
+      border: 2px groove #777
+      color: white
+      $color = #3A9CBF
+      background-color: $color
+      +radial-gradient(color-stops($color, darken($color, 18%) 300px))
+      -moz-box-shadow: 0 0 70px rgba(0, 0, 0, 0.5) inset

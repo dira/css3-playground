@@ -9,6 +9,10 @@
   %body
     %h1= title
 
+    %ol{ :style => "display:none"}
+      %li http://www.webdesignerwall.com/tutorials/beautiful-css3-search-form/
+      %li http://www.webdesignerwall.com/demo/css3-dropdown-menu/
+
     %section#buttons
       %h1 Yummy buttons
       %div
@@ -46,10 +50,11 @@
           %h1 Welcome
           %p Please admire calmly.
 
-    %footer
-      %p
-        code by
-        %a{ :href => "http://dira.ro" } dira.ro
-      %p
-        Inspired by the
-        %a{ :href => "http://www.webdesignerwall.com/tutorials/css3-gradient-buttons/" } CSS3 Gradient buttons tutorial
+    %section#fancy_footer
+      %section.content
+        %p Imagine this as the end of some content.
+        %footer
+          %p Footer text
+          %section
+            Special stuff
+

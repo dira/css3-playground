@@ -545,3 +545,61 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   -khtml-border-bottom-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+/* line 159, ../../../public/stylesheets/sass/default.sass */
+#fancy_footer {
+  background-color: #ddd5c7;
+  padding: 50px 30px;
+}
+/* line 163, ../../../public/stylesheets/sass/default.sass */
+#fancy_footer .content, #fancy_footer footer, #fancy_footer section {
+  margin: 0 auto;
+}
+/* line 165, ../../../public/stylesheets/sass/default.sass */
+#fancy_footer .content {
+  width: 600px;
+  min-height: 100px;
+  padding: 30px 40px 0;
+  background-color: white;
+  border: 1px solid #777777;
+  border-top: 0;
+}
+/* line 172, ../../../public/stylesheets/sass/default.sass */
+#fancy_footer footer {
+  width: 520px;
+  margin-top: 60px;
+  position: relative;
+  top: 10px;
+  border: 1px solid #aaaaaa;
+  text-align: left;
+  padding: 30px;
+  background-color: #e3dcd1;
+  background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 100, color-stop(0%, #f6f4f1), color-stop(100%, #e3dcd1));
+  background-image: -moz-radial-gradient(top center, circle, #f6f4f1 0%, #e3dcd1 100%);
+  background-image: radial-gradient(top center, circle, #f6f4f1 0%, #e3dcd1 100%);
+}
+/* line 182, ../../../public/stylesheets/sass/default.sass */
+#fancy_footer footer section {
+  width: 496px;
+  height: 80px;
+  position: relative;
+  top: 33px;
+  left: -29px;
+  padding: 20px 50px;
+  min-height: 0;
+  margin-top: 70px;
+  margin-left: -10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px groove #777777;
+  color: white;
+  background-color: #3a9cbf;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, color-stop(0%, #3a9cbf), color-stop(100%, #256279));
+  background-image: -moz-radial-gradient(center center, circle, #3a9cbf 0%, #256279 300px);
+  background-image: radial-gradient(center center, circle, #3a9cbf 0%, #256279 300px);
+  -moz-box-shadow: 0 0 70px rgba(0, 0, 0, 0.5) inset;
+}
