@@ -18,11 +18,14 @@
 
 @mixin color($bgrd)
   border: solid 1px darken($bgrd, 3%)
+  background: $bgrd
   @include linear-gradient(color-stops(lighten($bgrd, 13%), $bgrd))
   color= mix(#fff, $bgrd, 90%)
   &:hover
+    background: darken($bgrd, 5%)
     @include linear-gradient(color-stops(lighten($bgrd, 10%), darken($bgrd, 5%)))
   &:active
+    background: lighten($bgrd, 10%)
     @include linear-gradient(color-stops($bgrd, lighten($bgrd, 10%)))
     color= mix(#fff, $bgrd, 70%)
 
