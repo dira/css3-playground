@@ -1,0 +1,24 @@
+// @import "compass/css3"
+@import "compass/css3/version-2"
+
+@mixin old_button
+  display: inline-block
+  padding: 0.35em 1em 0.4em
+  outline: none
+  cursor: pointer
+  text-align: center
+  text-decoration: none
+  @include border-radius(.4em)
+  // to enable the padding
+  border: none
+  letter-spacing: 1px
+  text-shadow: 0 1px 1px rgba(0,0,0,.3)
+
+@mixin old_color($bgrd)
+  background: $bgrd
+  border: 5px solid mix(#000, $bgrd, 8%)
+  color= mix(#fff, $bgrd, 90%)
+  &:hover
+    text-indent: 0.1em
+  // &:active
+    // background: lighten($bgrd, 10%)
