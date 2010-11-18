@@ -41,16 +41,16 @@ p
     // font-size: 1.5em
 
 #menu_3_layers
-  $base:  #069C01
-  // $base-extreme: lighten(desaturate($base, 100%), 100%)
-  // $light: darken(saturate(adjust-hue($base-extreme, -60deg), 50%), 10%)
-  // $other: darken(saturate(adjust-hue($base-extreme, -30deg), 50%), 50%)
   $base: #0A569C
-  $base: #9C0044
+  // $base: #9C0044
+  // $base: #9C4579
+  // $base: #9C3D18
   // $base:  #069C01
-  $base-extreme: lighten(saturate(desaturate($base, 100%), 50%), 100%)
-  $light: darken(adjust-hue($base-extreme, -30deg), 10%)
-  $other: darken(adjust-hue($base-extreme, -15deg), 50%)
+  $base-neutral: desaturate($base, saturation($base)/2)
+  $base_light: lightness($base)
+  $light: lighten(adjust-hue($base-neutral, -20deg), (100%-$base_light)*0.85)
+  $other: lighten(adjust-hue($base-neutral, -15deg), (100%-$base_light)*0.3)
+
   header
     hgroup
       margin-bottom: 1px
@@ -75,7 +75,6 @@ p
       border: none
       ol
         +horizontal-list-container
-        padding-top: 0.5em
         font-weight: bold
         font-size: 0.9em
         li
@@ -90,6 +89,8 @@ p
           +border-top-right-radius(0.2em)
     section:nth-child(2)
       background-color: $base
+      ol
+        padding-top: 0.5em
     section:nth-child(3)
       background-color: $light
       padding: 0 6em
