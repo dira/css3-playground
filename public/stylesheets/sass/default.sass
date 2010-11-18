@@ -24,22 +24,82 @@ footer
     &:first-of-type
       margin-left: 0
 
-section
+body > section
   margin: 200px 0
   min-height: 400px
 
 p
   margin: 1em 0
 
-h1
-  color: #555
-  margin: 30px 0 40px
-  font-size: 2em
-  section &
-    color: #777
-    margin: 20px 0
-    font-size: 1.5em
+// h1
+  // color: #555
+  // margin: 30px 0 40px
+  // font-size: 2em
+  // section &
+    // color: #777
+    // margin: 20px 0
+    // font-size: 1.5em
 
+#menu_3_layers
+  $base:  #069C01
+  // $base-extreme: lighten(desaturate($base, 100%), 100%)
+  // $light: darken(saturate(adjust-hue($base-extreme, -60deg), 50%), 10%)
+  // $other: darken(saturate(adjust-hue($base-extreme, -30deg), 50%), 50%)
+  $base: #0A569C
+  $base: #9C0044
+  // $base:  #069C01
+  $base-extreme: lighten(saturate(desaturate($base, 100%), 50%), 100%)
+  $light: darken(adjust-hue($base-extreme, -30deg), 10%)
+  $other: darken(adjust-hue($base-extreme, -15deg), 50%)
+  header
+    hgroup
+      margin-bottom: 1px
+      padding: 0.2em 1em
+      background-color: $other
+      color: white
+      h1, h2
+        margin: 0
+        line-height: 1.2
+        text-transform: uppercase
+      h1
+        font-size: 1.5em
+        color: black
+        letter-spacing: -1px
+      h2
+        font-size: 0.8em
+        color: white
+        letter-spacing: 2px
+        word-spacing: 2px
+    section
+      padding: 0 3em
+      border: none
+      ol
+        +horizontal-list-container
+        padding-top: 0.5em
+        font-weight: bold
+        font-size: 0.9em
+        li
+          +horizontal-list-item(false)
+          margin-right: 1em
+          padding: 0.2em 1em 0
+          color: white
+        li.selected
+          background-color: $light
+          color: black
+          +border-top-left-radius(0.2em)
+          +border-top-right-radius(0.2em)
+    section:nth-child(2)
+      background-color: $base
+    section:nth-child(3)
+      background-color: $light
+      padding: 0 6em
+      font-size: 0.8em
+      li
+        color: #444
+  section
+    padding: 2em
+    border-left: 1px solid #ccc
+    border-right: 1px solid #ccc
 
 @import '_buttons'
 #buttons
